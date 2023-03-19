@@ -35,8 +35,6 @@ class RegistrationActivity : AppCompatActivity() {
         (application as MyApplication).appComponent.inject(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registration)
-
-        registrationViewModel = RegistrationViewModel((application as MyApplication).userManager)
         supportFragmentManager.beginTransaction()
             .add(R.id.fragment_holder, EnterDetailsFragment())
             .commit()
