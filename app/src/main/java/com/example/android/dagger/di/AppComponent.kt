@@ -17,7 +17,6 @@ interface AppComponent {
     interface Factory{
         fun create(@BindsInstance context: Context) :AppComponent
     }
-    fun inject(activity: RegistrationActivity)
     fun inject(activity: MainActivity)
 
     fun registrationComponent(): RegistrationComponent.Factory
